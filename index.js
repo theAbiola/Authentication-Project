@@ -10,8 +10,9 @@ import env from "dotenv";
 
 const app = express();
 const port = 3000;
-const saltRounds = process.env.SALT_ROUNDS;
 env.config();
+const saltRounds = process.env.SALT_ROUNDS;
+
 
 app.use(
   session({
